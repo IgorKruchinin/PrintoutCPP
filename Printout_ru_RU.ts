@@ -200,13 +200,13 @@
     </message>
     <message>
         <location filename="printoutmainwin.cpp" line="126"/>
-        <location filename="printoutmainwin.cpp" line="132"/>
+        <location filename="printoutmainwin.cpp" line="139"/>
         <source>Excel file</source>
         <translation type="unfinished">Файл Excel</translation>
     </message>
     <message>
         <location filename="printoutmainwin.cpp" line="126"/>
-        <location filename="printoutmainwin.cpp" line="132"/>
+        <location filename="printoutmainwin.cpp" line="139"/>
         <source>Excel files (*.xls *.xlsx *.csv)</source>
         <translation type="unfinished">Файлы Excel (*.xls *.xlsx *.csv)</translation>
     </message>
@@ -335,77 +335,77 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="excelmanager.h" line="18"/>
+        <location filename="excelmanager.h" line="49"/>
         <source>Date</source>
         <translation type="unfinished">Дата</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="19"/>
+        <location filename="excelmanager.h" line="50"/>
         <source>Series</source>
         <translation type="unfinished">Серия</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="20"/>
+        <location filename="excelmanager.h" line="51"/>
         <source>Number</source>
         <translation type="unfinished">Номер</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="21"/>
+        <location filename="excelmanager.h" line="52"/>
         <source>Section</source>
         <translation type="unfinished">Секция</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="22"/>
+        <location filename="excelmanager.h" line="53"/>
         <source>Repair</source>
         <translation type="unfinished">Ремонт</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="23"/>
+        <location filename="excelmanager.h" line="54"/>
         <source>Tests type</source>
         <translation type="unfinished">Вид испытаний</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="24"/>
+        <location filename="excelmanager.h" line="55"/>
         <source>Power NM</source>
         <translation type="unfinished">Мощность НР</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="25"/>
+        <location filename="excelmanager.h" line="56"/>
         <source>Power EM</source>
         <translation type="unfinished">Мощность АР</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="26"/>
+        <location filename="excelmanager.h" line="57"/>
         <source>VSH1</source>
         <translation type="unfinished">ВШ1</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="27"/>
+        <location filename="excelmanager.h" line="58"/>
         <source>VSH2</source>
         <translation type="unfinished">ВШ2</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="28"/>
+        <location filename="excelmanager.h" line="59"/>
         <source>Supercharging</source>
         <translation type="unfinished">Наддув</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="29"/>
+        <location filename="excelmanager.h" line="60"/>
         <source>Time</source>
         <translation type="unfinished">Время</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="30"/>
+        <location filename="excelmanager.h" line="61"/>
         <source>Fuel consuption</source>
         <translation type="unfinished">Расход топлива</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="31"/>
+        <location filename="excelmanager.h" line="62"/>
         <source>Notes</source>
         <translation type="unfinished">Замечания</translation>
     </message>
     <message>
-        <location filename="excelmanager.h" line="32"/>
+        <location filename="excelmanager.h" line="63"/>
         <source>Master</source>
         <translation type="unfinished">Мастер</translation>
     </message>

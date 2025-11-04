@@ -14,25 +14,31 @@ public:
     static serialContainer<Record> readExcel(String path) {
         XLDocument doc(path);
         serialContainer<Record> records;
-        auto sheet = doc.workbook().worksheet("Sheet1");
-        for(uint32_t i = 1; i < sheet.rowCount(); ++i) {
-            Date date = sheet.cell(i + 1, 1).value();
-            String series = sheet.cell(i + 1, 2).value();
-            Int number = sheet.cell(i + 1, 3).value();
-            String section = sheet.cell(i + 1, 4).value();
-            String repair = sheet.cell(i + 1, 5).value();
-            String testsType = sheet.cell(i + 1, 6).value();
-            String normalPower = sheet.cell(i + 1, 7).value();
-            String emergencyPower = sheet.cell(i + 1, 8).value();
-            String vsh1 = sheet.cell(i + 1, 9).value();
-            String vsh2 = sheet.cell(i + 1, 10).value();
-            String supercharging = sheet.cell(i + 1, 11).value();
-            String time = sheet.cell(i + 1, 12).value();
-            String consuption = sheet.cell(i + 1, 13).value();
-            String notes = sheet.cell(i + 1, 14).value();
-            String master = sheet.cell(i + 1, 15).value();
+        try {
+            auto sheetNames = doc.workbook().sheetNames();
+            //auto sheet = doc.workbook().worksheet("Sheet1");
+            auto sheet = doc.workbook().worksheet(sheetNames[0]);
+            for(uint32_t i = 1; i < sheet.rowCount(); ++i) {
+                Date date = sheet.cell(i + 1, 1).value();
+                String series = sheet.cell(i + 1, 2).value();
+                Int number = std::stoi(sheet.cell(i + 1, 3).value());
+                String section = sheet.cell(i + 1, 4).value();
+                String repair = sheet.cell(i + 1, 5).value();
+                String testsType = sheet.cell(i + 1, 6).value();
+                String normalPower = sheet.cell(i + 1, 7).value();
+                String emergencyPower = sheet.cell(i + 1, 8).value();
+                String vsh1 = sheet.cell(i + 1, 9).value();
+                String vsh2 = sheet.cell(i + 1, 10).value();
+                String supercharging = sheet.cell(i + 1, 11).value();
+                String time = sheet.cell(i + 1, 12).value();
+                String consuption = sheet.cell(i + 1, 13).value();
+                String notes = sheet.cell(i + 1, 14).value();
+                String master = sheet.cell(i + 1, 15).value();
 
-            records.push_back(Record(date, series, number, section, repair, testsType, normalPower, emergencyPower, vsh1, vsh2, supercharging, time, consuption, notes, master));
+                records.push_back(Record(date, series, number, section, repair, testsType, normalPower, emergencyPower, vsh1, vsh2, supercharging, time, consuption, notes, master));
+            }
+        } catch (const std::exception& e) {
+            std::cerr << e.what();
         }
         return records;
     }

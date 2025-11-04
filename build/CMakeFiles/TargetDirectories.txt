@@ -1,0 +1,17 @@
+/home/user/PrintoutCPP/build/CMakeFiles/translations.dir
+/home/user/PrintoutCPP/build/CMakeFiles/resources.dir
+/home/user/PrintoutCPP/build/CMakeFiles/Printout.dir
+/home/user/PrintoutCPP/build/CMakeFiles/edit_cache.dir
+/home/user/PrintoutCPP/build/CMakeFiles/rebuild_cache.dir
+/home/user/PrintoutCPP/build/CMakeFiles/list_install_components.dir
+/home/user/PrintoutCPP/build/CMakeFiles/install.dir
+/home/user/PrintoutCPP/build/CMakeFiles/install/local.dir
+/home/user/PrintoutCPP/build/CMakeFiles/install/strip.dir
+/home/user/PrintoutCPP/build/CMakeFiles/Printout_autogen.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/OpenXLSX.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/edit_cache.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/rebuild_cache.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/list_install_components.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/install.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/install/local.dir
+/home/user/PrintoutCPP/build/OpenXLSX/CMakeFiles/install/strip.dir

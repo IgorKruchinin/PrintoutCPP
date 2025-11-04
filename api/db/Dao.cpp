@@ -1,5 +1,5 @@
 #include "Dao.h"
-#include <format>
+#include <fmt/format.h>
 #include <string>
 
 DAO::DAO(const std::string& db_name) {
@@ -48,7 +48,7 @@ bool DAO::create_table() {
 }
 
 bool DAO::insert_record(const IRecord &record) {
-    std::string sql = std::format("INSERT INTO records (date, series, number, section, repair, test_type, normal_power, emergency_power, "\
+    std::string sql = fmt::format("INSERT INTO records (date, series, number, section, repair, test_type, normal_power, emergency_power, "\
                              "vsh1, vsh2, supercharging, time, fuel_consumption, notes, master) "\
         "VALUES (\"{}\", \"{}\", {}, \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\", \"{}\");"\
                                   ")", record.getDate(), record.getSeries(), record.getNumber(), record.getSection(), record.getRepair(), record.getTestType(), record.getNormalPower(), record.getEmergencyPower(), record.getVSH1(), record.getVSH2(), record.getSupercharging(), record.getTime(), record.getFuelConsuption(), record.getNotes(), record.getMaster());

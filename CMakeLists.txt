@@ -18,6 +18,7 @@ add_subdirectory(OpenXLSX)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools PrintSupport)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools PrintSupport)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets)
+find_package(fmt REQUIRED)
 
 set(TS_FILES Printout_ru_RU.ts)
 qt_add_translation(QM_FILES ${TS_FILES})
@@ -86,7 +87,7 @@ endif()
 
 add_dependencies(${CMAKE_PROJECT_NAME} resources)
 
-target_link_libraries(Printout PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::PrintSupport OpenXLSX::OpenXLSX sqlite3)
+target_link_libraries(Printout PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::PrintSupport OpenXLSX::OpenXLSX sqlite3 fmt::fmt)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

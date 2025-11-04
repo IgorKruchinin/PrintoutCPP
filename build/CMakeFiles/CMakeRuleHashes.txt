@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+6774fd88d2af421d55b478458a3ff3f0 /home/user/PrintoutCPP/Printout_ru_RU.ts
+dde0ddf28f33476f32e22a6d27ec1145 CMakeFiles/Printout_autogen
+a27c80f865d2275785fda312677d71af CMakeFiles/translations
+be055cf818a3eebc23accc0291137cbd Printout_ru_RU.qm
